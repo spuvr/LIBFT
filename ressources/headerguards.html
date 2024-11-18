@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Guards Explained</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header Guards in C/C++</h1>
+        </header>
+        
+        <section class="section">
+            <h2>What Are Header Guards?</h2>
+            <p>
+                Header guards are preprocessor directives used in header files to ensure that the content of the 
+                header is included only once during compilation, even if the header is included multiple times 
+                in different files.
+            </p>
+            <pre>
+#ifndef HEADER_NAME_H
+#define HEADER_NAME_H
+
+// Declarations and definitions
+
+#endif // HEADER_NAME_H
+            </pre>
+        </section>
+
+        <section class="section">
+            <h2>Why Do We Need Header Guards?</h2>
+            <ul>
+                <li><strong>Avoid Multiple Inclusions:</strong> Prevents the same file from being included multiple times.</li>
+                <li><strong>Prevent Redefinition Errors:</strong> Stops errors caused by multiple definitions of structs, functions, or variables.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Are They Needed Only for <code>struct</code>?</h2>
+            <p>No, header guards are needed for everything in a header file, such as:</p>
+            <ul>
+                <li>Structs</li>
+                <li>Function Prototypes</li>
+                <li>Macros</li>
+                <li>Global Variables</li>
+                <li>Typedefs</li>
+                <li>Enums</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Example Without Header Guards</h2>
+            <pre>
+struct MyStruct {
+    int x;
+    int y;
+};
+            </pre>
+            <p>If the file containing this struct is included multiple times, it will throw a <strong>redefinition error</strong>.</p>
+        </section>
+
+        <section class="section">
+            <h2>Solution</h2>
+            <p>Use header guards:</p>
+            <pre>
+#ifndef HEADER_H
+#define HEADER_H
+
+struct MyStruct {
+    int x;
+    int y;
+};
+
+#endif // HEADER_H
+            </pre>
+        </section>
+
+        <footer>
+            <p>Writed by [spuvr]</p>
+        </footer>
+    </div>
+</body>
+</html>
