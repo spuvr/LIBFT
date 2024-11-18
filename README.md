@@ -28,7 +28,7 @@ When I started, I had no prior experience with coding. Here’s how my journey u
 
 4. **Exploring New Concepts:**  
    I started by learning about **header files** and their purpose. The first thing I created was my `libft.h` file.  
-   Then, I learned about **include guards/header guards** and their importance in preventing multiple inclusions. You can explore this topic visually [here](http://spuvr.byethost6.com/HEADER-GUARDS/).
+   Then, I learned about **include guards/header guards** and their importance in preventing multiple inclusions. You can explore this topic visually <a href="http://spuvr.byethost6.com/HEADER-GUARDS/" target="_blank">here</a>.
 
 ---
 
