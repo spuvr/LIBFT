@@ -79,6 +79,8 @@ Here are some resources that helped me along the way:
 ### Memory Manipulation:
 - [Mastering Memory Manipulation in C](https://dinis-maga.medium.com/mastering-memory-manipulation-in-c-62f48bcaa2cc)
 
+### Data Structures and Linked Lists Explained
+- [Understand linked list](http://spuvr.byethost6.com/DATA-STRUCT-LINKED-LIST/)
 ---
 
 ## What's Next
