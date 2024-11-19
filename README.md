@@ -36,9 +36,8 @@ When I started, I had no prior experience with coding. Here’s how my journey u
    - Static libraries  
    - Makefiles  
 
-   Thankfully, I sought help from senior students. As someone once said:  
-   *"If you want honey, don't kick over the beehive."*  
-   So, I asked politely and received valuable insights that gave me a clearer vision of what to do and how to begin.
+   Thankfully, I sought help from senior students.
+   I asked politely and received valuable insights that gave me a clearer vision of what to do and how to begin.
 
 4. **Exploring New Concepts:**  
    I started by learning about **header files** and their purpose. The first thing I created was my `libft.h` file.  
